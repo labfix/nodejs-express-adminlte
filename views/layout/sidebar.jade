@@ -1,128 +1,34 @@
-aside.main-sidebar
-	section.sidebar
-		.user-panel
-			.pull-left.image
-				img(src='/adminlte/dist/img/user2-160x160.jpg',alt='User Image').img-circle
-			.pull-left.info
-				p Alexander Pierces
-				a(href='#')
-					i.fa.fa-circle.text-success 
-					| Online
-		form(action='#',method='get').sidebar-form
-			.input-group
-				input(type='text', name='q',placeholder='Search...').form-control
-				span.input-group-btn
-						button(type='submit', name='search')#search-btn.btn.btn-flat
-							i.fa-fa-search
-		ul.sidebar-menu
-			li.header
-				| Main Navigation
-			li.treeview
-				a(href='#')
-					i.fa.fa-dashboard
-					span
-						| Dashboard
-					span.pull-right-container
-						i.fa.fa-angle-left.pull-right
-				ul.treeview-menu
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| Dashboard V1
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| Dashboard V2
-			li.treeview
-				a(href='#')
-					i.fa.fa-files-o
-					span
-						| Layout Options
-					span.pull-right-container
-						span.label.label-primary.pull-right
-							| 4
-				ul.treeview-menu
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| Top Navigation
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| Boxed
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| Fixed
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| Collapsed Sidebar
-			li
-				a(href='#')
-					i.fa.fa-th
-					span
-						| Widgets
-					span.pull-right-container
-						small.label.pull-right.bg-green
-							| Hot
-			li.treeview
-				a(href='#')
-					i.fa.fa-pie-chart
-					span
-						| Chart
-					span.pull-right-container
-						i.fa.fa-angle-left.pull-right
-				ul.treeview-menu
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| ChartJs
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| Morris
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| Flot
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| ChartJs
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| Inline charts
-			li.treeview
-				a(href='#')
-					i.fa.fa-laptop
-					span
-						| UI Elements
-					span.pull-right-container
-						i.fa.fa-angle-left.pull-right
-				ul.treeview-menu
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| General
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| Icons
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| Buttons
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| Sliders
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| Timeline
-					li
-						a(href='#')
-							i.fa.fa-circle-o
-							| Modals
+// Main Sidebar Container
+aside.main-sidebar.sidebar-dark-primary.elevation-4
+	// Brand Logo
+	a.brand-link(href='index3.html')
+		img.brand-image.img-circle.elevation-3(src='dist/img/AdminLTELogo.png', alt='AdminLTE Logo', style='opacity: .8')
+		span.brand-text.font-weight-light AdminLTE 3
+	// Sidebar
+	.sidebar
+		// Sidebar user panel (optional)
+		.user-panel.mt-3.pb-3.mb-3.d-flex
+		.image
+			img.img-circle.elevation-2(src='dist/img/user2-160x160.jpg', alt='User Image')
+		.info
+			a.d-block(href='#') Alexander Pierce
+		// Sidebar Menu
+		nav.mt-2
+		ul.nav.nav-pills.nav-sidebar.flex-column(data-widget='treeview', role='menu', data-accordion='false')
+			
+			li.nav-item.has-treeview.menu-open
+			a.nav-link.active(href='#')
+				i.nav-icon.fa.fa-dashboard
+				p
+				| Dashboard
+				i.right.fa.fa-angle-left
+			
+			li.nav-header EXAMPLES
+			li.nav-item
+			a.nav-link(href='pages/calendar.html')
+				i.nav-icon.fa.fa-calendar
+				p
+				| Calendar
+				span.badge.badge-info.right 2
+			li.nav-item.has-treeview
+			
